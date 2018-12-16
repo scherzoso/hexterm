@@ -11,3 +11,6 @@ LIBS := -lm
 
 hexterm: hexterm.c
 	$(CC) $(STD_CFLAGS) $(CFLAGS) -o $@ $< $(LIBS)
+
+clean:
+	rm -f hexterm
