@@ -360,11 +360,6 @@ static term_colour hexterm(const hex_colour h)
 
 static term_colour strterm(const char *s)
 {
-	size_t l = strnlen(s, 4);
-
-	if (l == 0 || l == 4)
-		return 0;
-
 	return (term_colour)(strtoul(s, NULL, 0) % 256);
 }
 
